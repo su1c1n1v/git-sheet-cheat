@@ -31,12 +31,27 @@ Some informations about how to use git in the CLI.
     - `git commit`
     - `git commit -m "<message>"`
         - Commit the files in the staging area with a messge
+- ***Create an annotated tag***
+    - `git tag -a <tag-name> -m <message>`
+    - Has full information about the branch
+- ***View all tags in a repository***
+    - `git tag`
+- ***Create a lightweight tag***
+    - `git tag <tag-name> -m <message>`
+- ***Delete a tag***
+    - `git tag -d <tag-name>`
+- ***Create a new branch***
+    - `git branch <branch-name>`
+- ***Switch to another branch***
+    - `git checkout <branch-name>`
+
 ---
 
 ## Functionalities
 - ***.gitignore***
-    - List of ignored files, will not be tracked in the git 
-
+    - List of ignored files, will not be tracked in the git.
+- ***HEAD***
+    - Point to the current branch.
 ---
 
 ### Credits: Vinícius Costa
