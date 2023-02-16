@@ -47,7 +47,11 @@ Some informations about how to use git in the CLI.
 - ***Delete a branch***
     - `git branch -d <branch-name>`
 - ***Combine the lastest commits from two branch into one branch***
-    - `git branch -d <branch-name>`
+    - `git merge <branch-name>`
+- ***Replay changes made to one branch over the top of another branch***
+    - `git rebase <branch-name>`
+- ***Revert a commit in the project***
+    - `git revert <commit-name>`
 ---
 
 ## Functionalities
