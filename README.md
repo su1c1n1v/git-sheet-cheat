@@ -44,7 +44,10 @@ Some informations about how to use git in the CLI.
     - `git branch <branch-name>`
 - ***Switch to another branch***
     - `git checkout <branch-name>`
-
+- ***Delete a branch***
+    - `git branch -d <branch-name>`
+- ***Combine the lastest commits from two branch into one branch***
+    - `git branch -d <branch-name>`
 ---
 
 ## Functionalities
