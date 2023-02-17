@@ -89,6 +89,18 @@ Some informations about how to use git in the CLI.
     - Basecally clone a project in another server, allowing others to work in another repository.
 ---
 
+## SSH Key
+1) Generate SSH key
+    - `ssh-keygen -t ed25519 -C "your_email@example.com"`
+2) Turn on the ssh-agent
+    - `eval "$(ssh-agent -s)"`
+3) Add your new SSH key in the ssh-agent
+    - `ssh-add ~/.ssh/id_ed25519` or the path of your private key
+4) Copy your ssh key
+    - `clip < ~/.ssh/id_ed25519.pub` or the path of your bublic key
+5) Paste your key in the SSH and GPG keys in the GitHub
+
+---
 ### Credits
 
  - Information get by studing in the website [A CLOUD GURU](https://learn.acloud.guru/).
