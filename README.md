@@ -25,6 +25,14 @@ Some informations about how to use git in the CLI.
     - `man git-status`
         - Documentation fo the command git status
     - git only shows the foulders that it is not empty, to add the foulder it is required to add a file or add a file .keep
+- ***Show the historic of the commits***
+    - `git logs`
+    - Example: `git log --oneline`
+        - Show all the historics in one line.
+    - `git log --stat`
+        - Show the statistics of the files with each commit
+    - `git log --graph`
+        - Show the textual graph of the project`s commit
 - ***Remove a file in the staging area***
     - `git rm <file-name>`
 - ***Commit files***
@@ -47,7 +55,24 @@ Some informations about how to use git in the CLI.
 - ***Delete a branch***
     - `git branch -d <branch-name>`
 - ***Combine the lastest commits from two branch into one branch***
-    - `git branch -d <branch-name>`
+    - `git merge <branch-name>`
+- ***Replay changes made to one branch over the top of another branch***
+    - `git rebase <branch-name>`
+- ***Revert a commit in the project***
+    - `git revert <commit-name>`
+    - Example: `git revert HEAD`
+        - Revert the latest commit
+- ***Show the difference in the files***
+    - `git diff`
+- ***Clone a repository***
+    - `git clone <remote-repository-address>`
+        - Clone a remote repository
+    - `git clone <local-repository> <new-repository>`
+        - Clone a local repository
+- ***Show the remote servers that are being tracked for the current repository***
+    - `git remote -v`
+- ***Fetch new commit informations***
+    - `git fetch`
 ---
 
 ## Functionalities
@@ -55,6 +80,8 @@ Some informations about how to use git in the CLI.
     - List of ignored files, will not be tracked in the git.
 - ***HEAD***
     - Point to the current branch.
+- ***Forking a git project***
+    - Basecally clone a project in another server, allowing others to work in another repository.
 ---
 
 ### Credits: Vinícius Costa
