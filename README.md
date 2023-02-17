@@ -71,8 +71,13 @@ Some informations about how to use git in the CLI.
         - Clone a local repository
 - ***Show the remote servers that are being tracked for the current repository***
     - `git remote -v`
+    - `git remote show origin`
+        - show more details about the remote repository
 - ***Fetch new commit informations***
     - `git fetch`
+- ***Pushes local changes to the git repository***
+    - `git push -u <remote-branch> <local-branch>`
+    - `git push origin <local-branch>:<remote-branch>`
 ---
 
 ## Functionalities
@@ -84,4 +89,7 @@ Some informations about how to use git in the CLI.
     - Basecally clone a project in another server, allowing others to work in another repository.
 ---
 
-### Credits: Vinícius Costa
+### Credits
+
+ - Information get by studing in the website [A CLOUD GURU](https://learn.acloud.guru/).
+
