@@ -101,7 +101,65 @@ Some informations about how to use git in the CLI.
 5) Paste your key in the SSH and GPG keys in the GitHub
 
 ---
+
+## GitHub Actions 
+
+- ***GitHub Actions***
+    - It is a CI (continuous integration) solution;
+    - Can trigger workflow based on pushes, PRs, executions, builds, tests, and deploy tasks;
+    ---
+- ***Workflow***
+    - It is a colletion of jobs that run based on a specific trigger;
+    - It is a CI pipeline;
+    - Defined in YAML files.
+- ***Runner***
+    - It is a compute machine where workflow are executed.
+    - `Custom Runner`
+        - It is a VM running in your environment.
+- ***Job***
+    - It is a step that executes in a sigle runner workspace.
+- ***Step***
+    - It is the lowest unit of functionality for GitHub action.
+    ---
+- ***Terms***
+    - `CI (Continuous Integration):`
+        - Any post-commit pipelines that are triggerd.
+    - `Environment`
+        - A dedicated set of infrastructure;
+        - Where a repository`s code can run.
+    - `Gitflow`
+        - Using Git branchs to manage deployment;
+        - A model where specific branchs map to designated environments and new come is validates.
+    - `Community Actions`
+        - Prepackaged steps for GitHub Actions;
+        - Created by the community;
+        - Open-source.
+---
+- ***Secure***
+    - GitHub Action has a lot of ways to be trigged, and this way can bring some untrusted inputs;
+    - Limit use of community actions;
+    - Fork Actions and maintain a copy;
+    - Custom Runners can be dangeros with public repositories, and you can run untrusted code in your environment, consider use differents runners for each repository;
+    - It is good to have approvers in the PRs, for not allow any person to commit untrusted code.
+---
+- ***Workflow***
+    - `Trigger`
+        - Trigger a workflow
+        - Can be triggered by Push, Pull Request, schedule, commit, issues...
+    - `Variables`
+        - Information about the repository, job and run-time, event, commit, server and runner;
+---
+- ***Github Packages***
+    - Storage solution for any package or artifact type;
+    - Managed by REST API;
+    - Free storage;
+    - Suport container images, Ruby Gems, Node Modules, NuGet, Gradle and Maven.
+---
+- ***Github Secrets***
+    - Scoped to the repository;
+    - Can be accessed by multiple repositories;
+    - Encrypted environment variables;
+    - Save connections strings.
 ### Credits
 
  - Information get by studing in the website [A CLOUD GURU](https://learn.acloud.guru/).
-
